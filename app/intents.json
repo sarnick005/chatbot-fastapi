@@ -1,0 +1,229 @@
+[
+  {
+    "tag": "greeting",
+    "patterns": ["Hi", "Hello", "Hey", "How are you", "Good day"],
+    "responses": [
+      "Hello! How can I help you with college information?",
+      "Hi there! What would you like to know about our college?"
+    ]
+  },
+  {
+    "tag": "college_info",
+    "patterns": [
+      "SVIST",
+      "Svist",
+      "S.V.I.S.T",
+      "S V I S T",
+      "svst",
+      "What can you tell me about SVIST?",
+      "Tell me about SVIST college",
+      "What is SVIST?",
+      "Can you provide information about SVIST?",
+      "Details about the college",
+      "What is the full name of SVIST?",
+      "Where is SVIST located?",
+      "What courses are offered at SVIST?",
+      "Tell me more about the college programs",
+      "Is SVIST accredited?",
+      "What affiliations does SVIST have?",
+      "Can you give me an overview of SVIST?",
+      "What makes SVIST a good choice for study?",
+      "What are the highlights of SVIST?",
+      "How is SVIST rated?",
+      "What do students say about SVIST?",
+      "What is the campus like at SVIST?",
+      "What extracurricular activities are available at SVIST?",
+      "What facilities does SVIST offer?",
+      "Can you share some history about SVIST?",
+      "How long has SVIST been established?",
+      "What is the mission of SVIST?"
+    ],
+    "responses": [
+      "The name of our college is SVIST, which is NAAC accredited and MAKAUT affiliated. Our college offers courses like B.Tech in Computer Science & Engineering, Artificial Intelligence and Data Science, Electronics and Communication Engineering, Electrical Engineering, Mechanical Engineering, Civil Engineering, and MBA (Masters in Business Administration). It is situated in Dakshin Gibindapur, Baruipur."
+    ]
+  },
+  {
+    "tag": "admission",
+    "patterns": [
+      "how much wbjee rank",
+      "tell me about admission in SVIST",
+      "how to apply",
+      "admission process",
+      "What are the admission requirements?",
+      "How do I apply for admission?",
+      "What is the application procedure?",
+      "Can you explain the admission process?",
+      "What documents are needed for admission?",
+      "Is there an entrance exam for admission?",
+      "How can I get admitted to SVIST?",
+      "What is the WBJEE rank required for admission?",
+      "When does the admission cycle start?",
+      "Are there any eligibility criteria for B.Tech?",
+      "Can you tell me about the MBA admission process?",
+      "What is the cut-off for WBJEE?",
+      "How do I know if I am eligible for admission?",
+      "Can I apply for multiple courses?",
+      "What is the selection process for B.Tech?",
+      "Is there any interview for the MBA program?",
+      "Are there any quotas or reservations in the admission process?",
+      "What happens if I miss the application deadline?",
+      "Can I get admission through lateral entry?",
+      "What is the fee for the application process?",
+      "How long does the admission process take?"
+    ],
+    "responses": [
+      "Our admission process involves: 1. Online application 2. Submit transcripts 3. Letters of recommendation. The deadline is March 31st."
+    ]
+  },
+  {
+    "tag": "fees",
+    "patterns": [
+      "How much is the tuition",
+      "fee structure",
+      "cost",
+      "financial aid",
+      "scholarship",
+      "fees method",
+      "fees payment",
+      "yearly fees",
+      "monthly fees"
+    ],
+    "responses": [
+      "The admission fee is ₹40,000, and then it's ₹50,000 for each semester."
+    ]
+  },
+  {
+    "tag": "semesters",
+    "patterns": [
+      "How many semesters are there?",
+      "What is the total number of semesters?",
+      "How many semesters for B.Tech?",
+      "How many semesters for MBA?",
+      "What are the semesters like for B.Tech?",
+      "Can you tell me about the MBA semester structure?",
+      "How long is the B.Tech program?",
+      "What is the duration of the MBA program?",
+      "Are there any special semesters for internships?",
+      "Do all courses have the same number of semesters?",
+      "What subjects are covered in each semester for B.Tech?",
+      "What are the core courses in the MBA program?",
+      "Are there elective courses available in MBA semesters?",
+      "How is the semester system structured at SVIST?",
+      "Is there a summer semester or break between semesters?",
+      "What happens if I fail a semester?",
+      "Can I switch programs after a semester?",
+      "What is the grading system for each semester?",
+      "Are there any projects or practicals in each semester?"
+    ],
+    "responses": [
+      "For B.Tech, there are 8 semesters, and for MBA, there are 4 semesters. Each semester covers specific subjects and includes both theory and practical components.",
+      "The MBA program consists of 4 semesters, while the B.Tech program has 8 semesters, allowing students to explore various subjects relevant to their field."
+    ]
+  },
+  {
+    "tag": "exams",
+    "patterns": [
+      "Tell me about the exams",
+      "exam structure",
+      "how many internal exams are there"
+    ],
+    "responses": [
+      "There are four internal exams named Continuous Assessment (CA) for theory papers and two Practical Continuous Assessments (PCA) for practicals. Additionally, there is one semester exam that includes both theory and practical components."
+    ]
+  },
+  {
+    "tag": "ca1",
+    "patterns": [
+      "What is CA1",
+      "Explain CA1",
+      "CA1 details",
+      "CA1",
+      "ca one",
+      "continuous assessment one",
+      "continuos assessment 1"
+    ],
+    "responses": ["CA1 is a technical PPT submission containing 25 marks."]
+  },
+  {
+    "tag": "ca2",
+    "patterns": [
+      "What is CA2",
+      "Explain CA2",
+      "CA2 details",
+      "CA2",
+      "ca two",
+      "continuous assessment two",
+      "continuos assessment 2"
+    ],
+    "responses": [
+      "CA2 is a technical report writing assignment containing 25 marks."
+    ]
+  },
+  {
+    "tag": "ca3",
+    "patterns": [
+      "What is CA3",
+      "Explain CA3",
+      "CA3 details",
+      "CA3",
+      "ca three",
+      "continuous assessment three",
+      "continuos assessment 3"
+    ],
+    "responses": ["CA3 is a written-based exam containing 25 marks."]
+  },
+  {
+    "tag": "ca4",
+    "patterns": ["What is CA4", "Explain CA4", "CA4 details"],
+    "responses": [
+      "CA4 is a computer-based MCQ exam containing 25 marks, conducted by MAKAUT."
+    ]
+  },
+  {
+    "tag": "pca1",
+    "patterns": ["What is PCA1", "Explain PCA1", "PCA1 details"],
+    "responses": ["PCA1 is a practical internal exam containing 40 marks."]
+  },
+  {
+    "tag": "pca2",
+    "patterns": ["What is PCA2", "Explain PCA2", "PCA2 details"],
+    "responses": [
+      "PCA2 is another practical internal exam containing 40 marks."
+    ]
+  },
+  {
+    "tag": "semester_theory",
+    "patterns": [
+      "semester exams",
+      "semester exams information",
+      "sem",
+      "odd sem",
+      "even sem",
+      "What is the exam structure for theory papers",
+      "How many marks for theory exams",
+      "Semester exam details for theory"
+    ],
+    "responses": [
+      "The semester exam for theory papers contains 70 marks for each subject and lasts for 3 hours."
+    ]
+  },
+  {
+    "tag": "semester_practical",
+    "patterns": [
+      "What is the exam structure for practical papers",
+      "How many marks for practical exams",
+      "Semester exam details for practical"
+    ],
+    "responses": [
+      "The semester exam for practical papers contains 60 marks for each practical paper, which includes 20 marks for the lab copy, 20 marks for the viva, and 20 marks for the written exam."
+    ]
+  },
+  {
+    "tag": "goodbye",
+    "patterns": ["Bye", "See you", "Goodbye", "Thanks", "Thank you"],
+    "responses": [
+      "Goodbye! Feel free to ask if you have more questions.",
+      "Thank you for your interest in our college!"
+    ]
+  }
+]
