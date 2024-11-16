@@ -1,13 +1,26 @@
-from fastapi import APIRouter
-from app.models import HealthResponse
-from app.chatbot import SelfLearningChatbot
+# app/routes/health.py
+from fastapi import APIRouter, HTTPException, status
+from datetime import datetime
+from app.database import db
 
 router = APIRouter()
 
-chatbot = SelfLearningChatbot()
 
-
-@router.get("/", response_model=HealthResponse)
+@router.get("/")
 async def health_check():
-    """Check the health of the API and the chatbot model."""
-    return HealthResponse(status="healthy", model_accuracy=chatbot.accuracy)
+    """Check system health status"""
+    try:
+        # Check database connection
+        db_status = "healthy" if db.command("ping")["ok"] else "unhealthy"
+
+        return {
+            "status": "healthy",
+            "database": db_status,
+            "timestamp": datetime.now().isoformat(),
+        }
+    except Exception as e:
+        return {
+            "status": "unhealthy",
+            "error": str(e),
+            "timestamp": datetime.now().isoformat(),
+        }

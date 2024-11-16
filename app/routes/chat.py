@@ -1,14 +1,15 @@
+# app/routes/chat.py
 from fastapi import APIRouter, HTTPException, status
 from app.models import ChatInput, ChatResponse
 from app.chatbot import SelfLearningChatbot
 
 router = APIRouter()
-
 chatbot = SelfLearningChatbot()
 
 
 @router.post("/", response_model=ChatResponse)
 async def chat(chat_input: ChatInput):
+    """Handle chat interactions with the bot"""
     try:
         predicted_tag, confidence = chatbot.predict_intent(chat_input.user_input)
         if not predicted_tag:
@@ -26,7 +27,10 @@ async def chat(chat_input: ChatInput):
         )
 
         return ChatResponse(
-            response=response, confidence=confidence, intent_tag=predicted_tag
+            response=response,
+            confidence=confidence,
+            intent_tag=predicted_tag,
+            chat_id=chat_id,
         )
     except Exception as e:
         raise HTTPException(
