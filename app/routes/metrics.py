@@ -1,6 +1,6 @@
 # app/routes/metrics.py
 from fastapi import APIRouter, HTTPException, status, Query
-from typing import Optional
+from typing import Optional,List
 from datetime import datetime
 from app.models import ModelMetrics, ChatHistoryResponse
 from app.chatbot import SelfLearningChatbot
